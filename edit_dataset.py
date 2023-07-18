@@ -32,7 +32,7 @@ class EditDataset(Dataset):
         self.crop_res = crop_res
         self.flip_prob = flip_prob
 
-        with open(Path(self.path, "seeds.json")) as f:
+        with open("/kaggle/working/imageediting/seeds.json") as f:
             self.seeds = json.load(f)
 
         split_0, split_1 = {
